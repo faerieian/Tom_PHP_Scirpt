@@ -17,6 +17,11 @@ $days = (strtotime($date2) - strtotime($date1)) / 86400;
 $temp_dir = 'temp/';
 $file_name = 'result.png';
 
+// create the temp directory if it doesn't exist
+if (!is_dir($temp_dir)) {
+    mkdir($temp_dir, 0777, true);
+}
+
 QRcode::png($days, $temp_dir . $file_name);
 
 // return the QR code image as an image tag
