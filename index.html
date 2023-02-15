@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  </head>
+  <body>
+    <h2>Calculate the number of days between two dates:</h2>
+    <input type="text" id="date1" placeholder="Enter date 1 (YYYY-MM-DD)">
+    <input type="text" id="date2" placeholder="Enter date 2 (YYYY-MM-DD)">
+    <button id="calculate-days">Calculate</button>
+    <br><br>
+    <div id="days-result"></div>
+
+    <h2>Convert a string to a QR code:</h2>
+    <input type="text" id="input-string" placeholder="Enter string">
+    <button id="create-qr-code">Create QR Code</button>
+    <br><br>
+    <div id="qr-code-result"></div>
+  </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      // handle the calculation of days between two dates
+      $("#calculate-days").click(function() {
+        var date1 = $("#date1").val();
+        var date2 = $("#date2").val();
+        $.ajax({
+          type: "POST",
+          url: "calculate_days.php",
+          data: { date1: date1, date2: date2 },
+          success: function(data) {
+            $("#days-result").html(data);
+          }
+        });
+      });
+
+      // handle the conversion of a string to a QR code
+      $("#create-qr-code").click(function() {
+        var input_string = $("#input-string").val();
+        $.ajax({
+          type: "POST",
+          url: "create_qr_code.php",
+          data: { input_string: input_string },
+          success: function(data) {
+            $("#qr-code-result").html(data);
+          }
+        });
+      });
+    });
+  </script>
