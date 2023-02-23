@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/faerieian/Tom_PHP_Scirpt/issues"
   },
-  "homepage": "https://github.com/faerieian/Tom_PHP_Scirpt#readme"
+  "homepage": "https://github.com/faerieian/Tom_PHP_Scirpt#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0"
+  }
 }
