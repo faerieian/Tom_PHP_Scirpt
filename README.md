@@ -24,6 +24,6 @@ Usage
 To use the project, simply open the index.html file in your web browser. Enter the required inputs in the text boxes and click the "Calculate" or "Create QR Code" button. The result will be displayed on the page, and you can download the resulting image by clicking on it.
 
 License
-This project is released under the MIT License. You are free to use, modify, and distribute the code as you wish, but please credit the original author and include a link back to this repository.
+You are free to use, modify, and distribute the code as you wish, but please credit the original author and include a link back to this repository.
 
 Yahooo wooooowoooo By Tom
