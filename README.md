@@ -4,7 +4,7 @@ This project consists of two PHP scripts for working with dates and QR codes, as
 
 ## Features
 
-##ATest
+## ATest
 ATest is a script that takes two dates as inputs and calculates the number of days between them. The user can enter the dates in the format YYYY-MM-DD. The result is displayed as an image file that can be downloaded to the user's device. The image is created using the GD library in PHP.
 
 ## BTest
